@@ -9,7 +9,7 @@ f_CGU =  open( ".\CGU.txt" ,"r", encoding="utf-8")
 data_CGU = f_CGU.read()
 data_CGU = data_CGU[data_CGU.index("[Signer avec votre nom]:"):data_CGU.index("[Signer avec votre nom]:")+99]
 print(data_CGU)
-if data_CGU == "[Signer avec votre Nom]:":
+if data_CGU == "[Signer avec votre nom]:":
     CGU = Tk()
     CGU.title("VoltaireTaMere 1.0.0")
     CGU.geometry('180x45')
