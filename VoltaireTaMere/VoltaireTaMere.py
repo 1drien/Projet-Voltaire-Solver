@@ -27,8 +27,8 @@ if data_CGU == "[Signer avec votre nom]:":
 def data_Extract (PATH):
     print(PATH)
     Fichier_ERR = open( PATH ,"r", encoding="utf-8") 
-    data_Brut = Fichier_ERR.read()
-    data_Brut = data_Brut[data_Brut.index("[\"java.util.ArrayList"):data_Brut.index("]")] + "]€"
+    data_Brut = Fichier_ERR.read()+"€"
+    data_Brut = data_Brut[data_Brut.index("[\"java.util.ArrayList"):data_Brut.index("]€")] + "]€"
 
     pos = 0
     str_Build = ""
@@ -62,14 +62,14 @@ def test_Str():
         return 0
     
     print(boitePhrase.get(1.0,END))
-    Close_Match = difflib.get_close_matches(boitePhrase.get(1.0,END), data)
+    Close_Match = difflib.get_close_matches("\""+boitePhrase.get(1.0,END).replace("-","\\x26#x2011;").replace("'","\\x27")+"\"", data)
     print(Close_Match)
     if Close_Match != []:
         for i in range(len(Close_Match)):
             if "\\x3E" in Close_Match[i]:
                 
                 boiteOutPut.delete(1.0,"end")
-                boiteOutPut.insert(1.0,Close_Match[i].replace("\\x3CB\\x3E", "< ").replace("\\x3C/B\\x3E", " >").replace("\\x27","'").replace("\\xA0"," ")+"\"","err")
+                boiteOutPut.insert(1.0,Close_Match[i].replace("\\x3CB\\x3E", "< ").replace("\\x3C/B\\x3E", " >").replace("\\x27","'").replace("\\xA0"," ").replace("\\x26#x2011;","-")+"\"","err")
                 return 0
 
     boiteOutPut.delete(1.0,"end")
