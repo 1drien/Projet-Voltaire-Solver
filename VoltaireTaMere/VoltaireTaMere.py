@@ -7,7 +7,7 @@ data = [] #global
 
 f_CGU =  open( ".\CGU.txt" ,"r", encoding="utf-8")
 data_CGU = f_CGU.read()
-data_CGU = data_CGU[data_CGU.index("[Signer avec votre Nom]:"):data_CGU.index("[Signer avec votre Nom]:")+99]
+data_CGU = data_CGU[data_CGU.index("[Signer avec votre nom]:"):data_CGU.index("[Signer avec votre nom]:")+99]
 print(data_CGU)
 if data_CGU == "[Signer avec votre Nom]:":
     CGU = Tk()
