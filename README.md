@@ -2,7 +2,7 @@
 Logiciel écrit en python et converti en exécutable Windows permettant de résoudre projet-voltaire.fr sans effort :D. 
 Son taux de réussite sur le TEST BLANC est de 95%, les 5% restant sont des faux positifs (il indique une faute dans une phrase qui ressemble a celle entré).
 
-####################################################################################################################################
+###########################################################################
 MISE A JOUR 1.1.1:
 fonctionnalité: plus besoin de coller votre phrase, copier là simplement et laisser VoltaireTaMere la coller etla vérifier pour vous !
 Modules: les niveaux suivants sont compatibles:
@@ -10,7 +10,7 @@ Modules: les niveaux suivants sont compatibles:
 -Test Blanc
 ATTENTION: Les tests blancs comportent un nombre élever de FAUX POSITIF, 
 c’est-à-dire des fois où il indique une faute qui n'existe pas dû au fait que LES PHRASES SE RESSEMBLENT BEAUCOUP;
-####################################################################################################################################
+############################################################################
 
 Comment utiliser VoltaireTaMere:
 1) vérifié avoir lu et approuvé les CGU.
