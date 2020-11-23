@@ -92,7 +92,7 @@ def load_Fill():
         boiteOutPut.insert(1.0,"Fichier correctement chargé :D","noerr")
 
 root = Tk()
-root.title("VoltaireTaMere 1.1.0")
+root.title("VoltaireTaMere 1.1.1")
 root.geometry('407x445')
 root.resizable(False, False)
 root.iconphoto(True,PhotoImage(file = "VoltaireTaMereIcoPNG.png"))
@@ -100,7 +100,7 @@ root.configure(bg='#23272A')
 
 modules = StringVar()
 modules_Sup = "Module\ 1 Module\ 2 Module\ 3 Module\ 4 Module\ 5 Module\ 6 Module\ 7 Module\ 8 Module\ 9 Module\ 10 Test\ Blanc" #2-8
-modules_Exl = "Module\ 1 Module\ 2 Module\ 3 Module\ 4 Module\ 5 Module\ 6 Module\ 7 Module\ 8 Module\ 9 Module\ 10 Module\ 11 Module\ 12" #Verbes\ Pro\ I Verbes\ Pro\ II
+modules_Exl = "Module\ 1 Module\ 2 Module\ 3 Module\ 4 Module\ 5 Module\ 6 Module\ 7 Module\ 8 Module\ 9 Module\ 10 Module\ 11 Module\ 12 Verbes\ Pronominaux\ II" #Verbes\ Pro\ I Verbes\ Pro\ II
 
 extra_PATH = StringVar()
 root.clipboard_append("")
@@ -179,8 +179,7 @@ Label (root,
             fg="#ffffff",
             font=10).place(x=10, y=230)
 
-boitePhrase = Text (root,
-                
+boitePhrase = Text (root,           
                 height = 5,
                 width=48,
                 bg="#2C2F33",
