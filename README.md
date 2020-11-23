@@ -11,6 +11,7 @@ Modules: les niveaux suivants sont compatibles:
 -Test Blanc
 ATTENTION: Les tests blancs comportent un nombre élever de FAUX POSITIF, 
 c’est-à-dire des fois où il indique une faute qui n'existe pas dû au fait que LES PHRASES SE RESSEMBLENT BEAUCOUP;
+
 ############################################################################
 
 Comment utiliser VoltaireTaMere:
