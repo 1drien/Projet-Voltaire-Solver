@@ -1,4 +1,9 @@
 # Projet-Voltaire-Solver
+NOUVELLE VERSION DISPONIBLE AVCE UN BOT !!!!!!!!!!!
+https://github.com/AlexRAZU95/Projet-Voltaire-Auto/tree/File
+
+###########################################################################
+
 Logiciel écrit en python et converti en exécutable Windows permettant de résoudre projet-voltaire.fr sans effort :D. 
 Son taux de réussite sur le TEST BLANC est de 95%, les 5% restant sont des faux positifs (il indique une faute dans une phrase qui ressemble a celle entré).
 
